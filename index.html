@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-7">
+        <meta charset="width = device-width , initial scale = 1.0">
+        <script src="https://kit.fontawesome.com/037a8f5580.js" crossorigin="anonymous"></script>
+        <meta name="author" name = "KAKOOZA ">
+        <title>KAKOOZA</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+             
+            }
+            body{
+                  background-color: #160303;
+            }
+            h1{
+                color: #fff;
+                cursor: pointer;
+                margin: 30px 10px ;
+                font-size: 3rem;
+            }
+            h1:hover{
+                color: #45a049;
+            }
+            h3{
+                color: tomato;
+                text-align: center;
+                font-size: 2rem;
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            p{
+                font-size: 2rem;
+                cursor: pointer;
+                padding: 20px;
+                color: tomato;
+            }
+            .myprojects{
+                display: flex;
+                flex-direction: row;
+            }
+            .projects{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            }
+             .projects img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+            .projects p{
+                font-size: 1.3rem;
+            }
+              .py{
+                display: flex;
+                flex-direction: row;
+            }
+            .py1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            }
+              .py1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+            .py1 p{
+                font-size: 1.3rem;
+            }
+            .c{
+                display: flex;
+                flex-direction: row;
+            }
+            .c1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            }
+              .c1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+            .c1 p{
+                font-size: 1.4rem;
+            }
+            .of{
+                display: flex;
+                flex-direction: row;
+            }
+            .of1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            border-bottom-right-radius: 100px;
+            }
+              .of1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+            .sql{
+                display: flex;
+                flex-direction: row;
+            }
+            .sql1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            }
+              .sql1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+                 .gif{
+                display: flex;
+                flex-direction: row;
+            }
+            .gif1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            }
+              .gif1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+                 .os{
+                display: flex;
+                flex-direction: row;
+            }
+            .os1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+                border-bottom-right-radius: 100px;
+            }
+              .os1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+            .os1 p{
+                font-size: 1.3rem;
+            }
+            .end{
+                display: flex;
+                flex-direction: row;
+            }
+            .end1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+            border-bottom-right-radius: 100px;
+            }
+              .end1 img{
+                width: 600px;
+                height: 400px;
+                align-items: center;
+            }
+             .end1 p{
+                font-size: 1.3rem;
+            }
+                .see{
+                display: flex;
+                flex-direction: row;
+            }
+            .see1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+                    
+            }
+
+              .see1 img{
+                width: 600px;
+                height: 350px;
+                align-items: center;
+            }
+            .see1 i{
+                font-size: 2rem;
+                margin:  auto 20px;
+                color: brown;
+                cursor: pointer;
+            }
+             .see iframe{
+                height: 400px;
+                width: 600px;
+             }
+           .nu{
+                display: flex;
+                flex-direction: row;
+                margin: 40px 0;
+            }
+            .nu1{
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+                margin: 20px;
+                border-bottom-right-radius: 100px;
+            }
+            .nu1 img{
+                width: 600px;
+                height: 400px;
+            }
+             .nu1 p{
+                font-size: 1rem;
+            }
+            .form-container {
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 20px;
+            border: 2px solid;
+            border-image: linear-gradient(90deg, red, green) 10;
+            border-image-slice: 1;
+            border-radius: 10px;
+            animation: rotateColors 4s linear infinite;
+        }
+            .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+       
+        @keyframes rotateColors {
+            0% {
+                border-image-source: linear-gradient(90deg, red, green);
+            }
+            50% {
+                border-image-source: linear-gradient(90deg, green, red);
+            }
+            100% {
+                border-image-source: linear-gradient(90deg, red, green);
+            }
+        }
+
+        @media(max-width: 1000px) {
+       .form-container {
+        margin: 60px;
+        padding: 15px;
+        max-width: 700px;
+        max-height: 400px;
+    }
+    form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+     textarea {
+       width: 100%;
+        }
+} 
+
+    @media(max-width: 1000px) {
+                .myprojects{
+                display: flex;
+                flex-direction: column;
+            }
+              .projects{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 20px;
+            }
+            .projects img{
+                width: 1000px;
+                height: 500px;
+            }
+            .projects p{
+                font-size: 2rem;
+            }
+           
+              .py{
+                display: flex;
+                flex-direction: column;
+            }
+              .py1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 20px;
+            }
+            .py img{
+                width: 1000px;
+                height: 500px;
+            }
+            .py1 p{
+                font-size: 2rem;
+            }
+              .c{
+                display: flex;
+                flex-direction: column;
+            }
+              .c1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 20px;
+            }
+            .c1 img{
+                width: 1000px;
+                height: 500px;
+            }
+            .c1 p{
+                font-size: 2rem;
+            }
+              .of{
+                display: flex;
+                flex-direction: column;
+            }
+              .of1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 20px;
+            }
+            .of1 img{
+                width: 1000px;
+                height: 500px;
+            }
+                .of1 p{
+                font-size: 2.3rem;
+            }
+              .sql{
+                display: flex;
+                flex-direction: column;
+            }
+              .sql1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 20px;
+            }
+            .sql1 img{
+                width: 1000px;
+                height: 500px;
+            }
+            .sql1 p{
+                font-size: 3rem;
+            }
+                 .gif{
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+            }
+              .gif1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 40px;
+            }
+            .gif1 img{
+                width: 1000px;
+                height: 500px;
+            }
+                .os{
+                display: flex;
+                flex-direction: column;
+            }
+              .os1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 40px;
+            }
+            .os1 img{
+                width: 1000px;
+                height: 500px;
+            }
+                .os1 p{
+                font-size: 2rem;
+            }
+                .end{
+                display: flex;
+                flex-direction: column;
+            }
+              .end1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 40px;
+            }
+            .end1 img{
+                width: 1000px;
+                height: 500px;
+            }
+                .end1 p{
+                font-size: 2rem;
+            }
+          
+                .see{
+                display: flex;
+                flex-direction: column;
+            }
+              .see1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 40px;
+            }
+             .see1 img{
+                width: 1000px;
+                height: 450px;
+            }
+            .see1 iframe{
+                width: 1000px;
+                height: 500px;
+            }
+            .nu{
+                display: flex;
+                flex-direction: column;
+            }
+              .nu1{
+                width: 1000px;
+                height: 500px;
+                background-color: pink;
+                margin: 40px;
+            }
+            .nu1 img{
+                width: 1000px;
+                height: 500px;
+            }
+            .nu1 p{
+                font-size: 1.5rem;
+            }
+                
+            }
+        </style>
+    </head>
+    <html>
+        <body>
+            <content>
+                <h1>Hi there <i class="fa-solid fa-hand"></i>  I am Kakooza a Software Developer <i class="fa-solid fa-laptop-code"></i></h1>
+                <p>I am passionate about finding ways to use Html css, C/C++, Python, Mysql and Microsoft Office to be more efficient in programming <i class="fa-solid fa-code"></i></p>
+                <div class="myprojects">
+                    <div class="projects">
+                        <img src="images/html.png" alt="html">
+                    </div>
+                    <div class="projects">
+                        <h3>Responsive Website Development</h3>
+                        <p>I design and develop websites that are not only visually appealing but also highly functional.
+                        Planning, conceptualizing, and arranging content.<br>
+                        HTML is the standard markup language for creating Web pages, it describes the structure of Web <br>
+                        HTML consists of a series of elements that tell the browser how to display the content.
+                        <br>
+                        The first version of HTML was written by Tim Berners-Lee in 1993. Since then there have been many versions of HTML.<br>
+                            Html css and Javascript is the beginning of Programming. You will be able to build websites.</p>
+                    </div>
+                    </div>
+                <div class="py">
+                    <div class="py1">
+                        <img src="images/c1.png" alt="">
+                    </div>
+                    <div class="py1">
+                        <h3>C Programming Language</h3>
+                        <p>C is a high level programming language invented in the 1970's by Dennis Ritchie at the AT&T Bell Labs<br>
+                            It was used to design Operating System called UNIX, C language revolves around development as a system implementation language
+                            to write an operating system. Dennis Ritchie was inspired by Ken Thompson who created the B programming language<br> 
+                            C language can be implemented in development of Database systems, Network Drivers, Compilers and many more.<br>
+                            <strong>I will come up with an Operating System using C/C++</strong>
+                
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="c">
+                    <div class="c1">
+                        <img src="images/py1.jpg" alt="">
+                    </div>
+                    <div class="c1">
+                        <h3>Python Programming</h3>
+                        <p>Python was conceived in the late 1980's by Guido van Rossum at Centrum Wiskunde & Informatica(CWI) 
+                         in the Netherlands as a successor to the ABC programming language. It is commonly used for developing
+                         websites, software, task automation, data analysis and data visualization.<br> 
+                        • Proficiency in full-stack development, including front-end and back-end technologies.
+                        • Expertise in software architecture, code optimization, and performance tuning.
+                        • Strong problem-solving skills and the ability to adapt to new technologies and methodologies.
+                      </p>
+                    </div>
+                
+                </div>
+                <div class="of">
+                    <div class="of1">
+                        <img src="images/mso.png" alt="">
+                    </div>
+                    <div class="of1">
+                        <h3>Microsoft Office Suite</h3>
+                        <p>This is a project by Microsoft announced by Bill Gates in 1988, it includes Microsoft word, excel, access and many more ......
+                             Proficiently use Microsoft Word for document preparation, editing, formatting, and proofreading.
+                            •Implementation of  Microsoft excel for work sheets designing, calculations and presentation.
+
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="sql">
+                    <div class="sql1">
+                        <img src="images/mysql.png" alt="">
+                    </div>
+                    <div class="sql1">
+                        <h3>MySql Database Management System</h3>
+                        <p>This is the structured query language developed in 1970's by IBM researchers Raymond Boyce and Donald Camberlin used to 
+                            create and manage database systems.
+                        • Experience with database design and management using SQL and NoSQL databases.
+                        </p>
+                    </div>
+                
+                </div>
+                    <h3>Get in touch with me</h3>
+                <div class="form-container">
+                    <form action = "https://formsubmit.co/kakoozaxenyondo@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="contact">Contact:</label>
+                            <input type="text" id="contact" name="contact" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                </div>
+                     <h3>UP COMING PROJECTS</h3>
+                    <div class="gif">
+                    <div class="gif1">
+                       <a href="bos.png"><img src="bos.png" alt=""></a> 
+                    </div>
+                        <div class="gif1">
+                            <img src="codingb.gif" alt="">
+                        </div>
+                    </div>
+
+                <div class="os">
+                    <div class="os1">
+                        <h3>Elearning Platform</h3>
+                        <p>The University E-Learning Platform is a cutting-edge online education system designed to enhance the learning experience
+                        for students at our esteemed institution. This platform integrates advanced technologies to provide a flexible,
+                        interactive, and accessible virtual learning environment.<br> Key features include:<br>
+                    1. Course Delivery,
+                    2. Assessment and Feedback,
+                    3. Personalized Learning Paths,
+                    4. Technical Support,
+                    5. Continuous Improvement and Innovation.
+                    </p>
+                    </div>
+                    <div class="os1">
+                    <img src="avento0.gif" alt="">
+                    </div>    
+                </div>
+
+                <div class="end">
+                    <div class="end1">
+                        <img src="10_coding_dribbble.gif" alt="">
+                    </div>
+                    <div class="end1">
+                        <h3>INTERNET OF THINGS</h3>
+                        <P>The Internet of Things (IoT) is a revolutionary concept that refers to the interconnection of everyday physical devices
+                        to the internet, allowing them to collect and exchange data. These devices, ranging from household appliances and
+                        vehicles to industrial machinery and wearable gadgets, are embedded with sensors, software, and connectivity, enabling
+                        them to communicate and share information seamlessly.<br>
+                        Key elements of the Internet of Things include:<br>
+                        Connectivity:
+                        Sensors and Actuators,
+                        Data Processing and Analytics,
+                        Automation,
+                        Applications across Industries,
+                        Security and Privacy Concerns,
+                        Scalability,
+                        Economic and Social Impact.
+
+                        
+                    </P>
+                    </div>
+                
+                </div>
+                <div class="see">
+                    <div class="see1">
+                  <a href="images/20231122_143949.jpg"><img src="images/20231122_143949.jpg" alt=""></a>  
+               <a href="https://www.facebook.com/Kakooza Xenyondo William"><i class="fa-brands fa-square-facebook"></i></a> 
+                <a href="https://www.youtube.com/@kakoozaxenyondo00"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://www.github.com/"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.telegram.com/@Kakooza00"><i class="fa-brands fa-square-telegram"></i></a>
+                    </div>
+                    <div class="see1">
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.2808079078!2d32.51672295188229!3d0.3130290262708331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d74b39b%3A0x4538903dd96b6fec!2sKampala!5e0!3m2!1sen!2sug!4v1701715022299!5m2!1sen!2sug"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                
+                </div>
+                    <h3>FEATURING NKUMBA UNIVERSITY</h3>
+                <div class="nu">
+                
+                    <div class="nu1">
+                        <a href="images/Nkumba-University-Library-2-scaled.jpg"><img src="images/Nkumba-University-Library-2-scaled.jpg" alt=""></a>
+                    </div>
+                    <div class="nu1">
+                        <p>I am a student of Bachelor of Science in Computer Science, i really love programming. Before joining university i going
+                            for a course in Plumbing and Electrical Engineering, Holy God directed me to Computer Science. 
+                            I am looking forward with coming up with any projects like mobile applications,
+                            Management Systems, Embedded Systems rich in Internet of Things and Internet of Everything.<br>
+                            Having Expertise in Microsoft office, Assembly, C++, Java, Python, Javascript, RUBY, PHP, SWIFT, HTML, SQL,
+                            KOTLIN, RUST,TYPESCRIPT, SCALA, GO, C#, LUA, MATLAB & DART.. you are a Philosopher <i class="fa-solid fa-graduation-cap"></i><br>
+                            Nkumba University is a public university located in Entebbe, Uganda I OWE YOU <i class="fa-solid fa-handshake-angle"></i>.
+                            <br>FOR GOD AND MY COUNTRY<br><br>
+                           .<br>
+                            <strong> In the beginning Holy God created the heaven and earth.
+                            And the earth was without form, and void; and the darkness was upon the face of the deep.
+                            The Spirit of God moved upon the face of the waters.
+                            Holy God created man in His own image. We are of the Lord.
+                            The earth is the Lord's Hand work-ship</strong></p>
+                    </div>
+
+            </content>
+            
+          
+           
+        
+        </body>
+    </html>
+  
