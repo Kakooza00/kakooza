@@ -1,715 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta charset="utf-7">
-        <meta charset="width = device-width , initial scale = 1.0">
-        <script src="https://kit.fontawesome.com/037a8f5580.js" crossorigin="anonymous"></script>
-        <meta name="author" name = "KAKOOZA ">
-        <title>KAKOOZA</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-             
-            }
-            body{
-                  background-color: #363953;
-            }
-            h1{
-                color: #fff;
-                cursor: pointer;
-                margin: 30px 10px ;
-                font-size: 3rem;
-                text-align: center;
-            }
-            h1:hover{
-                color: #45a049;
-            }
-            h3{
-                color: tomato;
-                text-align: center;
-                font-size: 2rem;
-                cursor: pointer;
-                font-weight: bolder;
-            }
-            p{
-                font-size: 2rem;
-                cursor: pointer;
-                padding: 20px;
-                color: tomato;
-            }
-            .myprojects{
-                display: flex;
-                flex-direction: row;
-            }
-            a{
-                text-decoration: none;
-                font-size: 2rem;
-                font-weight: bolder;
-                color: green;
-            }
-            .projects{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            }
-             .projects img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-            .projects p{
-                font-size: 1.3rem;
-            }
-              .py{
-                display: flex;
-                flex-direction: row;
-            }
-            .py1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            }
-              .py1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-            .py1 p{
-                font-size: 1.3rem;
-            }
-            .c{
-                display: flex;
-                flex-direction: row;
-            }
-            .c1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            }
-              .c1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-            .c1 p{
-                font-size: 1.4rem;
-            }
-            .of{
-                display: flex;
-                flex-direction: row;
-            }
-            .of1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            border-bottom-right-radius: 100px;
-            }
-              .of1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-            .sql{
-                display: flex;
-                flex-direction: row;
-            }
-            .sql1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            }
-              .sql1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-                 .gif{
-                display: flex;
-                flex-direction: row;
-            }
-            .gif1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            }
-              .gif1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-                 .os{
-                display: flex;
-                flex-direction: row;
-            }
-            .os1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-                border-bottom-right-radius: 100px;
-            }
-              .os1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-            .os1 p{
-                font-size: 1.3rem;
-            }
-            .end{
-                display: flex;
-                flex-direction: row;
-            }
-            .end1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-            border-bottom-right-radius: 100px;
-            }
-              .end1 img{
-                width: 600px;
-                height: 400px;
-                align-items: center;
-            }
-             .end1 p{
-                font-size: 1.3rem;
-            }
-                .see{
-                display: flex;
-                flex-direction: row;
-            }
-            .see1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-                    
-            }
 
-              .see1 img{
-                width: 600px;
-                height: 350px;
-                align-items: center;
-            }
-            .see1 i{
-                font-size: 2rem;
-                margin:  auto 20px;
-                color: brown;
-                cursor: pointer;
-            }
-             .see iframe{
-                height: 400px;
-                width: 600px;
-             }
-           .nu{
-                display: flex;
-                flex-direction: row;
-                margin: 40px 0;
-            }
-            .nu1{
-                width: 600px;
-                height: 400px;
-                background-color: pink;
-                margin: 20px;
-                border-bottom-right-radius: 100px;
-            }
-            .nu1 img{
-                width: 600px;
-                height: 400px;
-            }
-             .nu1 p{
-                font-size: 1rem;
-            }
-            .form-container {
-            max-width: 400px;
-            margin: 60px auto;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧔🏿‍♂️Kakooza</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/037a8f5580.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #191919;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.3rem 10%;
+            background:tomato;
+            /*backdrop-filter: blur(50px);*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px);
+            z-index: -1;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+            transition: .5s;
+        }
+
+        .header:hover::after {
+            left: 100%;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            font-size: 1.15rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 2.5rem;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .icons {
+            right: 10%;
+            font-size: 2.8rem;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+        }
+
+        main {
+            margin: 100px 10px;
+        }
+
+        h1{
+            color: #fff;
+            margin: 20px 0;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+        main p{
+            font-size: 1.5rem;
+            cursor: pointer;
             padding: 20px;
-            border: 2px solid;
-            border-image: linear-gradient(90deg, red, green) 10;
-            border-image-slice: 1;
-            border-radius: 10px;
-            animation: rotateColors 4s linear infinite;
+            color: tomato;
         }
-            .form-group {
-            margin-bottom: 15px;
+        main h2{
+            color: green;
+            font-size: 2rem;
+        }
+        main h3{
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+        }
+        main span a{
+            background-color: cyan;
+            padding: 13px 16px;
+            color: #191919;
+            text-decoration: none;
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+        }
+        main span:hover{
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan ;
         }
 
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 24px 0;
+        }
+
+        .box0 {
+            width: 600px;
+            height: 400px;
+            margin: 20px 0;
+        }
+        .box0  img{
+            width: 600px;
+            height: 400px;
+        }
+        .box0 h3{
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+        }
+        .box0 p{
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 20px 0;
+        }
+
+        .box2 {
+            width: 600px;
+            height: 400px;
+        }
+        .box2 img{
+                width: 500px;
+                height: 400px;
+            }
+        .box6 p{
+            font-size: 1rem;
             color: #fff;
         }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .box6 img{
+            width: 600px;
+            height: 400px;
+        }
+         .box5{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 20px 0;
         }
 
-        textarea {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .box6{
+            width: 600px;
+            height: 400px;
+        }
+        .box7{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 20px 0;
         }
 
-        button {
-            background-color: #4caf50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
+        .box8{
+            width: 600px;
+            height: 400px;
+        }
+        .box8 p{
+            font-size: 1rem;
+            color: #fff;
+        }
+        .box8 img{
+            width: 600px;
+            height: 400px;
+        }
+        .box9{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 20px 0;
+        }
+        .box10{
+            width: 600px;
+            height: 400px;
+        }
+        .box10 img{
+            width: 600px;
+            height: 400px;
+        }
+
+
+
+        footer {
+            background-color:green;
+            height: 150px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        footer ul{
+            display: flex;
+            flex-direction: row;
+        }
+        footer ul li{
+            list-style-type: none;
+            padding: 20px;
+        }
+        footer ul li a{
+            font-size: 2rem;
+            color: #fff;
             cursor: pointer;
         }
 
-        button:hover {
-            background-color: #45a049;
+        footer p {
+            color: #fff;
+            text-align: center;
+            font-weight: bolder;
+            cursor: pointer;
         }
-    
-       
-        @keyframes rotateColors {
-            0% {
-                border-image-source: linear-gradient(90deg, red, green);
-            }
-            50% {
-                border-image-source: linear-gradient(90deg, green, red);
-            }
-            100% {
-                border-image-source: linear-gradient(90deg, red, green);
+
+        @media(max-width: 992px) {
+            .header {
+                padding: 1.3rem 5%;
             }
         }
 
-        @media(max-width: 1000px) {
-       .form-container {
-        margin: 60px;
-        padding: 15px;
-        max-width: 700px;
-        max-height: 400px;
-    }
-    form{
-        width: 100%;
-    }
-    input{
-        width: 100%;
-    }
-     textarea {
-       width: 100%;
-        }
-} 
+        @media(max-width: 768px) {
+            .header .logo {
+                font-size: 1.1rem;
+            }
 
+            .icons {
+                display: inline-flex;
+            }
 
-    @media(max-width: 1000px) {
-                .myprojects{
-                display: flex;
+            #check:checked~.icons #menu-icon {
+                display: none;
+            }
+
+            #check:checked~.icons #close-icon {
+                display: block;
+            }
+
+            .icons #close-icon {
+                display: none;
+            }
+
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: rgba(0, 0, 0, .1);
+                backdrop-filter: blur(50px);
+                box-shadow: 0.5rem 1 rgba(0, 0, 0, .1);
+                transition: .3s ease;
+                overflow: hidden;
+            }
+
+            #check:checked~.navbar {
+                height: 17.7rem;
+            }
+
+            .navbar a {
+                display: block;
+                font-size: 1.1rem;
+                margin: 1.5rem 0;
+                text-align: center;
+                transform: translateY(-50px);
+                transition: .3 ease;
+                opacity: 0;
+            }
+
+            #check:checked~.navbar a {
+                transform: translateY(0);
+                transition-delay: calc(.15s * var(--i));
+                opacity: 1;
+            }
+            h1{
+                font-size: 1rem;
+                text-align: center;
+            }
+            main p{
+                font-size: 1rem;
+            }
+            h3 {
+                font-size: 1rem;
+                text-align: center;
+            }
+            main span a{
+                font-size: 0.7rem;
+            }
+
+            .box {
                 flex-direction: column;
             }
-              .projects{
-                width: 1000px;
-                height: 500px;
-                background-color: #363953;
-                margin: 50px;
+
+            .box0 {
+                width: 350px;
+                margin: 20px 0;
+                height: 600px;
             }
-            .projects img{
-                width: 900px;
-                height: 500px;
+            .box0 img{
+                width: 330px;
+                height: 400px;
             }
-            .projects p{
-                font-size: 2rem;
+            .box0 h3{
+                font-size: 1rem;
+            }
+
+            .box1 {
+                flex-direction: column;
+            }
+
+            .box2 {
+                width: 350px;
+                margin: 20px 0;
+            }
+            .box2 img{
+                width: 300px;
+                height: 350px;
+            }
+            .box2 h3{
+                font-size: 1rem;
+            }
+            
+            .box5 {
+                flex-direction: column;
+            }
+
+            .box6 {
+                width: 350px;
+                height: 400px;
+                margin: 20px 0;
+            }
+            .box6 img{
+            width: 350px;
+            height: 400px;
+            }
+            .box6 h3{
+                font-size: 1rem;
+            }
+
+            .box7 {
+                flex-direction: column;
             }
            
-              .py{
+            .box8{
+                width: 350px;
+                margin: 20px 0;
+            }
+            .box8 h3{
+                font-size: 1rem;
+            }
+            .box8 p{
+                font-size: 0.8rem;
+            }
+            .box8 img{
+            width: 350px;
+            height: 400px;
+            }
+            .box9{
                 display: flex;
                 flex-direction: column;
             }
-              .py1{
-                width: 1000px;
-                height: 500px;
-                 background-color: #363953;
-                margin: 20px;
+            .box10{
+                width: 350px;
+                height: 350px;
+                margin: 20px 0;
             }
-            .py img{
-                width: 900px;
-                height: 500px;
+            .box10 img{
+                width: 350px;
+                height: 350px;
             }
-            .py1 p{
-                font-size: 2rem;
-            }
-              .c{
-                display: flex;
-                flex-direction: column;
-            }
-              .c1{
-                width: 1000px;
-                height: 500px;
-                 background-color: #363953;
-                margin: 20px;
-            }
-            .c1 img{
-                width: 900px;
-                height: 500px;
-            }
-            .c1 p{
-                font-size: 2rem;
-            }
-              .of{
-                display: flex;
-                flex-direction: column;
-            }
-              .of1{
-                width: 1000px;
-                height: 500px;
-                 background-color: #363953;
-                margin: 20px;
-            }
-            .of1 img{
-                width: 900px;
-                height: 500px;
-            }
-                .of1 p{
-                font-size: 2.3rem;
-            }
-              .sql{
-                display: flex;
-                flex-direction: column;
-            }
-              .sql1{
-                width: 1000px;
-                height: 500px;
-                background-color: pink;
-                margin: 20px;
-            }
-            .sql1 img{
-                width: 900px;
-                height: 500px;
-            }
-            .sql1 p{
-                font-size: 3rem;
-            }
-                 .gif{
-                display: flex;
-                flex-direction: column;
-                margin-top: 40px;
-            }
-              .gif1{
-                width: 1000px;
-                height: 500px;
-                background-color: pink;
-                margin: 40px;
-            }
-            .gif1 img{
-                width: 1000px;
-                height: 500px;
-            }
-                .os{
-                display: flex;
-                flex-direction: column;
-            }
-              .os1{
-                width: 1000px;
-                height: 500px;
-                background-color: pink;
-                margin: 40px;
-            }
-            .os1 img{
-                width: 1000px;
-                height: 500px;
-            }
-                .os1 p{
-                font-size: 2rem;
-            }
-                .end{
-                display: flex;
-                flex-direction: column;
-            }
-              .end1{
-                width: 1000px;
-                height: 500px;
-                background-color: pink;
-                margin: 40px;
-            }
-            .end1 img{
-                width: 1000px;
-                height: 500px;
-            }
-                .end1 p{
-                font-size: 2rem;
-            }
-          
-                .see{
-                display: flex;
-                flex-direction: column;
-            }
-              .see1{
-                width: 1000px;
-                height: 500px;
-                margin: 40px;
-                 background-color: #363953;
-            }
-             .see1 img{
-                width: 950px;
-                height: 450px;
-            }
-            .see1 i{
-                
-                padding: 5px 10px;
-               
-            }
-            .see1 iframe{
-                width: 1000px;
-                height: 500px;
-            }
-            .nu{
-                display: flex;
-                flex-direction: column;
-            }
-              .nu1{
-                width: 1000px;
-                height: 500px;
-                margin: 40px;
-            }
-            .nu1 img{
-                width: 1000px;
-                height: 500px;
-            }
-            .nu1 p{
-                font-size: 1.5rem;
-            }
-                
-            }
-        </style>
-    </head>
-    <html>
-        <body>
-            <content>
-                <h1>Hi there <i class="fa-solid fa-hand"></i>  I am Kakooza a Software Developer <i class="fa-solid fa-laptop-code"></i></h1>
-                <p>I am passionate about finding ways to use Html CSS, JavaScript, C/C++, Python, 
-                    Mysql and Microsoft Office to be more efficient in programming <i class="fa-solid fa-code"></i></p>
-                    <span><a href="Kakooza's_manifesto_2024.pdf" download="manifesto">Download Manifesto</a></span>
-                <div class="myprojects">
-                    <div class="projects">
-                        <a href="kakoozaF.jpg"><img src="kakoozaF.jpg" alt="html"></a>
-                    </div>
-                    <div class="projects">
-                        <h3>Aspiring Member of Parliament SCI</h3>
-                        <p>I am trustworthy, hardworking and motivated person who loves my school and i want to see it develop.
-                        I present a manifesto committed to fostering innovation, inclusively, and excellence as an applicant for the post of 
-                        Member of Parliament School of Computing and Informatics.
-                        <br>Infrastructure Resources: Advocate for the upgrade and expansion of computing laboratories, ensuring students have
-                        access to cutting-edge technology for hands-on learning. I will make sure PhD lab and lab A have operating computing
-                        equipment’s that are accessible to students.Community Engagement: Tech Outreach Programs such as Coding workshops, 
-                        Tech competitions, Trips and partnerships with other Universities.
-                         <br>
-                        
-                        <br>
-                        <br>
-                            </p>
-                    </div>
-                    </div>
-                <div class="py">
-                    <div class="py1">
-                    <h3>Responsive Website Development</h3>
-                    <p>I design and develop websites that are not only visually appealing but also highly functional.
-                        Planning, conceptualizing, and arranging content.<br>
-                        HTML is the standard markup language for creating Web pages, it describes the structure of Web <br>
-                        HTML consists of a series of elements that tell the browser how to display the content.
-                        <br>
-                        The first version of HTML was written by Tim Berners-Lee in 1993. Since then there have been many versions of
-                        HTML.<br>
-                        Html css and Javascript is the beginning of Programming. You will be able to build websites.
-                    </p>
-                        
-                    </div>
-                    <div class="py1">
-                        <h3>C Programming Language</h3>
-                        <p>C is a high level programming language invented in the 1970's by Dennis Ritchie at the AT&T Bell Labs<br>
-                            It was used to design Operating System called UNIX, C language revolves around development as a system implementation language
-                            to write an operating system. Dennis Ritchie was inspired by Ken Thompson who created the B programming language<br> 
-                            C language can be implemented in development of Database systems, Network Drivers, Compilers and many more.<br>
-                            <strong>I will come up with an Operating System using C/C++</strong>
-                
-                        </p>
-                    </div>
-                      
-                    
-                </div>
-                <div class="c">
-                    <div class="c1">
-                            <h3>Python Programming</h3>
-                            <p>Python was conceived in the late 1980's by Guido van Rossum at Centrum Wiskunde & Informatica(CWI)
-                                in the Netherlands as a successor to the ABC programming language. It is commonly used for developing
-                                websites, software, task automation, data analysis and data visualization.<br>
-                                • Proficiency in full-stack development, including front-end and back-end technologies.
-                                • Expertise in software architecture, code optimization, and performance tuning.
-                                • Strong problem-solving skills and the ability to adapt to new technologies and methodologies.
-                            </p>
-                    
-                    </div>
-                    <div class="c1">
-                    <h3>Microsoft Office Suite</h3>
-                    <p>This is a project by Microsoft announced by Bill Gates in 1988, it includes Microsoft word, excel, access and many
-                        more ......
-                        Proficiently use Microsoft Word for document preparation, editing, formatting, and proofreading.
-                        •Implementation of Microsoft excel for work sheets designing, calculations and presentation.
-                    
-                    </p>
-                    </div>
-                
-                </div>
-          
-                <div class="sql">
-                    <div class="sql1">
-                        <img src="images/mysql.png" alt="">
-                    </div>
-                    <div class="sql1">
-                        <h3>MySql Database Management System</h3>
-                        <p>This is the structured query language developed in 1970's by IBM researchers Raymond Boyce and Donald Camberlin used to 
-                            create and manage database systems.
-                        • Experience with database design and management using SQL and NoSQL databases.
-                        </p>
-                    </div>
-                
-                </div>
-                    <h3>Get in touch with me</h3>
-                <div class="form-container">
-                    <form action = "https://formsubmit.co/kakoozaxenyondo@gmail.com" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="contact">Contact:</label>
-                            <input type="text" id="contact" name="contact" required>
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
 
-                </div>
-                     <h3>UP COMING PROJECTS</h3>
-                    <div class="gif">
-                    <div class="gif1">
-                       <a href="bos.png"><img src="bos.png" alt=""></a> 
-                    </div>
-                        <div class="gif1">
-                            <img src="codingb.gif" alt="">
-                        </div>
-                    </div>
+        footer p{
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        }
+    </style>
+</head>
 
-                <div class="os">
-                    <div class="os1">
-                        <h3>Elearning Platform</h3>
-                        <p>The University E-Learning Platform is a cutting-edge online education system designed to enhance the learning experience
-                        for students at our esteemed institution. This platform integrates advanced technologies to provide a flexible,
-                        interactive, and accessible virtual learning environment.<br> Key features include:<br>
-                    1. Course Delivery,
-                    2. Assessment and Feedback,
-                    3. Personalized Learning Paths,
-                    4. Technical Support,
-                    5. Continuous Improvement and Innovation.
-                    </p>
-                    </div>
-                    <div class="os1">
+<body>
+    <header class="header">
+        <a href="#" class="logo">Kakooza</a>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="icons"><i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i></label>
+        <nav class="navbar">
+            <a href="i.html">Home</a>
+            <a href="a.html">About</a>
+            <a href="s.html">Services</a>
+            <a href="c.html">Contact</a>
+            <a href="g.html">Quiz</a>
+          
+        </nav>
+    </header>
+    <main>
+        <h1>Greetings <i class='bx bxs-hand'></i>, I am Kakooza <i class='bx bx-code-alt'></i> a Software Developer in Ugandan
+        </h1>
+        <p>I am passionate about finding ways to use Html CSS, JavaScript, C/C++, Python, PHP,
+        Mysql and Microsoft Office to be more efficient in programming <i class="fa-solid fa-code"></i></p>
+        <span><a href="Kakooza's_manifesto_2024.pdf" download="manifesto">Download Manifesto</a></span>
+        <div class="box">
+            <div class="box0">
+                <h3>Aspiring Member of Parliament SCI 2024</h3>
+                    <p>I am trustworthy, hardworking and motivated person who loves my school and i want to see it develop.
+                     I present a manifesto committed to fostering innovation, inclusively, and excellence as an applicant for the post of
+                     Member of Parliament School of Computing and Informatics.
+                    <br>Infrastructure Resources: Advocate for the upgrade and expansion of computing laboratories, ensuring students
+                    have access to cutting-edge technology for hands-on learning. I will make sure PhD lab and lab A have operating computing
+                        equipment’s that are accessible to students.Community Engagement: Tech Outreach Programs such as Coding workshops,
+                    Tech competitions, Trips and partnerships with other Universities.</p>
+            </div>
+            <div class="box0">
+                    <a href="kakoozaF.jpg"><img src="kakoozaF.jpg" alt="html"></a>
+            </div>
+        </div>
+        <h2>UPCOMING PROJECTS</h2>
+        <div class="box1">
+            <div class="box2">
+                <a href="bos.png"><img src="bos.png" alt=""></a>
+            </div>
+            <div class="box2">
+                <a href="coding1.gif"><img src="coding1.gif" alt=""></a>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box4">
+                        </div>
+            </div>
+            <div class="box4">
+           
+            </div>
+        </div>
+        <div class="box5">
+                <div class="box6">
+                        <h3>E-learning Platform</h3>
+                        <p>The University E-Learning Platform is a cutting-edge online education system designed to enhance the learning
+                            experience
+                            for students at our esteemed institution. This platform integrates advanced technologies to provide a flexible,
+                            interactive, and accessible virtual learning environment.<br> Key features include:<br>
+                            1. Course Delivery<br>
+                            2. Assessment and Feedback,<br>
+                            3. Personalized Learning Paths,<br>
+                            4. Technical Support,<br>
+                            5. Continuous Improvement and Innovation.
+                        </p>
+                </div>
+                <div class="box6">
                     <img src="avento0.gif" alt="">
-                    </div>    
                 </div>
-
-                <div class="end">
-                    <div class="end1">
-                        <img src="10_coding_dribbble.gif" alt="">
-                    </div>
-                    <div class="end1">
+        </div>
+        <div class="box7">
+                <div class="box8">
                         <h3>INTERNET OF THINGS</h3>
-                        <P>The Internet of Things (IoT) is a revolutionary concept that refers to the interconnection of everyday physical devices
-                        to the internet, allowing them to collect and exchange data. These devices, ranging from household appliances and
-                        vehicles to industrial machinery and wearable gadgets, are embedded with sensors, software, and connectivity, enabling
-                        them to communicate and share information seamlessly.<br>
-                        Key elements of the Internet of Things include:<br>
-                        Connectivity:
-                        Sensors and Actuators,
-                        Data Processing and Analytics,
-                        Automation,
-                        Applications across Industries,
-                        Security and Privacy Concerns,
-                        Scalability,
-                        Economic and Social Impact.
-
+                        <P>The Internet of Things (IoT) is a revolutionary concept that refers to the interconnection of everyday physical
+                            devices
+                            to the internet, allowing them to collect and exchange data. These devices, ranging from household appliances and
+                            vehicles to industrial machinery and wearable gadgets, are embedded with sensors, software, and connectivity,
+                            enabling
+                            them to communicate and share information seamlessly.<br>
+                            Key elements of the Internet of Things include:<br>
+                            Connectivity:
+                            Sensors and Actuators,
+                            Data Processing and Analytics,
+                            Automation,
+                            Applications across Industries,
+                            Security and Privacy Concerns,
+                            Scalability,
+                            Economic and Social Impact.
                         
-                    </P>
-                    </div>
-                
+                        
+                        </P>
                 </div>
-                <div class="see">
-                    <div class="see1">
-                  <a href="images/20231122_143949.jpg"><img src="images/20231122_143949.jpg" alt=""></a>  
-               
-                <a href="https://www.youtube.com/@kakoozaxenyondo00"><i class="fa-brands fa-square-youtube"></i></a>
-                <a href="https://www.github.com/kakooza00"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.telegram.com/@Kakooza00"><i class="fa-brands fa-telegram"></i></a>
-                <a href="https://www.linkedin.com/@kakoozaxenyondo"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <div class="see1">
-<iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.2808079078!2d32.51672295188229!3d0.3130290262708331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d74b39b%3A0x4538903dd96b6fec!2sKampala!5e0!3m2!1sen!2sug!4v1701715022299!5m2!1sen!2sug"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                
+                <div class="box8">
+                    <img src="10_coding_dribbble.gif" alt="">
                 </div>
-                    <h3>FEATURING NKUMBA UNIVERSITY</h3>
-                <div class="nu">
-                
-                    <div class="nu1">
-                        <a href="images/Nkumba-University-Library-2-scaled.jpg"><img src="images/Nkumba-University-Library-2-scaled.jpg" alt=""></a>
-                    </div>
-                    <div class="nu1">
-                        <p>I am a student of Bachelor of Science in Computer Science, i really love programming. Before joining university i going
-                            for a course in Plumbing and Electrical Engineering, Holy God directed me to Computer Science. 
-                            I am looking forward with coming up with any projects like mobile applications,
-                            Management Systems, Embedded Systems rich in Internet of Things and Internet of Everything.<br>
-                            Having Expertise in Microsoft office, Assembly, C++, Java, Python, Javascript, RUBY, PHP, SWIFT, HTML, SQL,
-                            KOTLIN, RUST,TYPESCRIPT, SCALA, GO, C#, LUA, MATLAB & DART.. you are a Philosopher <i class="fa-solid fa-graduation-cap"></i><br>
-                            Nkumba University is a public university located in Entebbe, Uganda I OWE YOU <i class="fa-solid fa-handshake-angle"></i>.
-                            <br>FOR GOD AND MY COUNTRY<br><br>
-                           .<br>
-                            <strong> In the beginning Holy God created the heaven and earth.
-                            And the earth was without form, and void; and the darkness was upon the face of the deep.
-                            The Spirit of God moved upon the face of the waters.
-                            Holy God created man in His own image. We are of the Lord.
-                            The earth is the Lord's Hand work-ship</strong></p>
-                    </div>
-               
+        </div>
+         <h3>FEATURING NKUMBA UNIVERSITY</h3>
+         <p>Nkumba University is a public university located in Entebbe, Uganda I OWE YOU</p>
+        <div class="box9">
+            <div class="box10">
+                    <a href="images/Nkumba-University-Library-2-scaled.jpg"><img src="images/Nkumba-University-Library-2-scaled.jpg"alt=""></a>
+            </div>
+            <div class="box10">
+                <a href="Nkumba_University_Aerial_View.jpg"><img src="Nkumba_University_Aerial_View.jpg" alt=""></a>
+            </div>
+        </div>
 
-            </content>
-         
-          
-           
-        
-        </body>
-    </html>
-  
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.youtube.com/@kakoozaxenyondo00"><i class="fa-brands fa-square-youtube"></i></a></li>
+            <li><a href="https://www.github.com/kakooza00"><i class="fa-brands fa-square-github"></i></a></li>
+            <li><a href="https://www.telegram.com/@Kakooza00"><i class="fa-brands fa-telegram"></i></a></a></li>
+            <li><a href="https://www.linkedin.com/@kakoozaxenyondo"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <p>💻Kakooza Xenyondo William</p><br>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
