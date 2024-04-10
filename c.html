@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📞@Kakooza</title>
+    <title>📞contact @Kakooza</title>
     <link rel="stylesheet" href="">
     <style>
         * {
@@ -78,11 +78,6 @@
             min-height: 60vh;
         }
 
-        .form h2 {
-            font-size: 32px;
-            color: #fff;
-            text-align: center;
-        }
 
         .form-box .input-box {
             position: relative;
@@ -98,14 +93,15 @@
             border: none;
             outline: none;
             font-size: 16px;
-            padding: 0 35px 0 5px;
+            padding: 0 20px 0 5px;
             color: #fff;
             transition: .3s;
         }
+     
 
         input:focus~label,
         input:valid~label {
-            top: -5px;
+            top: -10px;
         }
 
         .input-box label {
@@ -139,7 +135,8 @@
             padding: 5px 10px;
         }
         button {
-            margin: 40px 0;
+            align-items: center;
+            margin: 40px 10px;
             height: 40px;
             width: 90px;
             font-size: 15px;
@@ -155,20 +152,20 @@
             background: #0c1022;
             border: 2px solid #fff;
         }
-         @media (max-width: 768px){
-            .form{
-                height: 40vh;
-            }
+        @media (max-width: 768px){
             .container{
-                margin-bottom: 90px;
+                margin-bottom: 100px;
                 height: 440px;
                 width: 330px;
+            }
+            .form{
+                height: 20vh;
             }
             button{
                 margin: 20px 20px;
             }
-               .form-box{
-                min-height: 50px;
+            .form-box{
+                min-height: 40px;
             }
         }
     </style>
@@ -177,19 +174,21 @@
     <div class="container">
        
         <div class="image">
-            <form action="https://formsubmit.co/kakoozaxenyondo@gmail.com" method="POST"">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!---/*<form action="https://formsubmit.co/kakoozaxenyondo@gmail.com" method="POST">*--->
             <div class="form-box">
                 <div class="form">
                         <div class="input-box">
-                            <input type="email" required>
+                        <input type="hidden" name="access_key" value="d92ff073-03de-47bc-a2ee-2a44a653e313">
+                            <input type="email" required name="email">
                             <label for="">Email</label>
                         </div>
                         <div class="input-box" required>
-                            <input type="phone">
+                            <input type="phone" required autocomplete="off" name="phone">
                             <label for="">Phone</label>
                         </div>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button>Submit</button>
+                        <textarea name="message" id="textArea" cols="30" rows="10"></textarea>
+                        <button type="submit">Submit</button>
                         </div>
             </form>
             </div>
