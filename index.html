@@ -1,633 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="author" name="KAKOOZA ">
     <title>🧔🏿‍♂️Kakooza</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/037a8f5580.js" crossorigin="anonymous"></script>
+
+      
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Courier New', Courier, monospace;
         }
-
-        body {
-            min-height: 100vh;
-            background: #f3ead3;
+        body{
+               background: #f3ead3;
         }
-
-        .header {
+        .header{
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             padding: 1.3rem 10%;
             background: #4b371c;
+            /*background: rgba(0,0,0, .1);
             /*backdrop-filter: blur(50px);*/
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 100;
+            height: 60px;
         }
-
-        .header::before {
+        .header::before{
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, .1);
-            backdrop-filter: blur(50px);
+            background: rgba(0,0,0, .1);
+            /*backdrop-filter: blur(50px);*/
             z-index: -1;
         }
-
-        .header::after {
+        .header::after{
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255, .4), transparent);
             transition: .5s;
         }
-
-        .header:hover::after {
+        .header:hover::after{
             left: 100%;
         }
-
-        .logo {
+        .logo{
             font-size: 2rem;
             color: #fff;
             text-decoration: none;
             font-weight: 700;
         }
-
-        .navbar a {
+        .navbar a{
             font-size: 1.15rem;
             color: #fff;
             text-decoration: none;
             font-weight: 500;
             margin: 2.5rem;
+            border-radius: 10px;
+            cursor:pointer;
         }
-
-        #check {
+        .navbar a:hover{
+             background: #222;
+             padding: 12px;
+        }
+        #check{
             display: none;
         }
-
-        .icons {
-            right: 10%;
+        .icons{
+            right: 5%;
             font-size: 2.8rem;
             color: #fff;
             cursor: pointer;
             display: none;
             position: absolute;
-            font-weight: bolder;
         }
-
-        main {
-            margin: 100px 10px;
-        }
-
-        h1{
-            color: #222;
-            margin: 20px 0;
-            cursor: pointer;
-            font-size: 2rem;
-            font-weight: bolder;
+        main{
+          margin-top: 80px;
         }
         main p{
-            font-size: 1.5rem;
-            cursor: pointer;
-            padding: 20px;
-            color: #222;
-             font-weight: bolder;
+          font-size: 15px;
         }
-        main h2{
-            color: #222;
-            font-size: 2rem;
-             font-weight: bolder;
-        }
-        main h3{
-            color: #222;
-            text-align: center;
-            font-size: 2rem;
-            margin: 15px 0px;
-         font-weight: bolder;
-        }
-        main span a{
-            background-color: #123456;
-            padding: 13px 16px;
-            color: #fff;
-            text-decoration: none;
-            box-shadow: 0 0 5px #123456, 0 0 25px #123456;
-        }
-       <!--- main span:hover{
-            box-shadow: 0 0 5px #123456, 0 0 25px #123456, 0 0 50px #123456, 0 0 100px #123456, 0 0 200px #123456;
-        }--->
-      
+  ul{
+ position: relative;
+ transform: skewY(-15deg);
+ transition: 0.5s;
+ margin-left: 100px;
+}
+li{
+position: relative;
+list-style-type: none;
+width: 250px;
+cursor: pointer;
+background: #3e3f46;
+padding: 15px;
+z-index: var(--i);
+}
+li:hover{
+    background: #33a3ee;
+    transform: translateX(50px);
+    transition: 0.5s;
+}
+li:hover::before{
+    background: #1f5378;
+}
+li:hover::after{
+     background: #2982b9;
+}
+li:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    left: -40px;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+li::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0,.25);
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+main p{
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.box0{
+    width: 500px;
+    height:500px;
+    margin: 10px;
+}
+.box0 img{
+   width: 500px;
+    height: 500px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+   h2{
+    text-align: center;
+    padding: 30px 0px;
+}
+.box2{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+.box2 img{
+    width: 500px;
+    height: 500px;
+}
+.box2 p{
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 20px;
 
-        .box {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 24px 0;
-        }
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box4{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+.box4 img{
+     width: 500px;
+    height: 500px;
+}
 
-        .box0 {
-            width: 600px;
-            height: 400px;
-            margin: 20px 0;
-        }
-        .box0  img{
-            width: 600px;
-            height: 400px;
-        }
-        .box0 h3{
-            font-size: 1.5rem;
-            color: #222;
-            text-align: center;
-        }
-        .box0 p{
-            font-size: 1rem;
-            font-weight: bolder;
-        }
-
-        .box1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 20px 0;
-        }
-
-        .box2 {
-            width: 600px;
-            height: 400px;
-        }
-        .box2 img{
-                width: 500px;
-                height: 400px;
-            }
-        .box6 p{
-            font-size: 1rem;
-            color: #222;
-        }
-        .box6 img{
-            width: 600px;
-            height: 400px;
-        }
-         .box5{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 20px 0;
-        }
-
-        .box6{
-            width: 600px;
-            height: 400px;
-        }
-        .box7{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 20px 0;
-        }
-
-        .box8{
-            width: 600px;
-            height: 400px;
-        }
-        .box8 p{
-            font-size: 1rem;
-            color: #222;
-        }
-        .box8 img{
-            width: 600px;
-            height: 400px;
-        }
-        .box9{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 20px 0;
-        }
-        .box10{
-            width: 600px;
-            height: 400px;
-        }
-        .box10 img{
-            width: 600px;
-            height: 400px;
-        }
-         .box11{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 20px 0;
-        }
-        .box12{
-            width: 600px;
-            height: 400px;
-        }
-        .box10 p{
-            color: #222;
-            font-size: 20px;
-        }
-         .box12 img{
-            width: 600px;
-            height: 400px;
-        }
-        .box13{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-            .box14{
-                width: 600px;
-                height: 400px;
-                margin: 20px 0;
-            }
-            .box14 img{
-                width: 600px;
-                height: 400px;
-            }
-     
-
-        footer {
-            background-color: #4b371c;
-            height: 180px;
-            width: 100%;
-            margin-top: 100px;
-            margin-bottom: 0px;
-        }
-        footer ul{
-            display: flex;
-            flex-direction: row;
-        }
-        footer ul li{
-            list-style-type: none;
-            padding: 20px;
-        }
-        footer ul li a{
-            font-size: 2rem;
-            color: #fff;
-            cursor: pointer;
+.box5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box6{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+.box6 img{
+    width: 500px;
+    height: 480px;
+}
+h3{
+    text-align: center;
+    padding: 10px;
+}
+.box6 p{
+    font-size:20px;
+    }
+.box7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box8{
+    width: 500px;
+    height: 500px;
+    background: #3e3f46;
+    margin: 10px;
+}
+    .box8 img{
+        width: 500px;
+        height: 500px;
         }
 
-        footer p {
-            color: #fff;
-            text-align: center;
-            font-weight: bolder;
-            cursor: pointer;
-        }
+footer{
+    width: 100%;
+    height: 200px;
+    background: #222;
+}
+footer .ico{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer i{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+footer p{
+    text-align: center;
+    color: #ffff;
+    padding: 10px;
+}
 
-        @media(max-width: 992px) {
-            .header {
+ul li:hover a{
+    color: #fff;
+}
+        @media(max-width: 992px){
+            .header{
                 padding: 1.3rem 5%;
             }
         }
-
-        @media(max-width: 768px) {
-            .header .logo {
+        @media(max-width: 768px){
+            .header .logo{
                 font-size: 1.1rem;
             }
-
-            .icons {
+            .icons{
                 display: inline-flex;
             }
-
-            #check:checked~.icons #menu-icon {
+           #check:checked~.icons #menu-icon{
                 display: none;
             }
-
-            #check:checked~.icons #close-icon {
+            #check:checked~ .icons #close-icon{
                 display: block;
             }
-
-            .icons #close-icon {
+            .icons #close-icon{
                 display: none;
             }
-
-            .navbar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                height: 0;
-                background-color: rgba(0, 0, 0, .1);
-                backdrop-filter: blur(50px);
-                box-shadow: 0.5rem 1 rgba(0, 0, 0, .1);
-                transition: .3s ease;
-                overflow: hidden;
-            }
-
-            #check:checked~.navbar {
-                height: 17.7rem;
-            }
-
-            .navbar a {
-                display: block;
-                font-size: 1.1rem;
-                margin: 1.5rem 0;
-                text-align: center;
-                transform: translateY(-50px);
-                transition: .3 ease;
-                opacity: 0;
-            }
-
-            #check:checked~.navbar a {
-                transform: translateY(0);
-                transition-delay: calc(.15s * var(--i));
-                opacity: 1;
-            }
-            h1{
-                font-size: 1rem;
-                text-align: center;
-            }
-            main p{
-                font-size: 1rem;
-            }
-            h3 {
-                font-size: 1rem;
-                text-align: center;
-            }
-            main h3{
-                font-size: 18px;
-            }
-            main span a{
-                font-size: 0.7rem;
-            }
-
-            .box {
-                flex-direction: column;
-            }
-
-            .box0 {
-                width: 350px;
-                margin: 20px 0;
-                height: 600px;
-            }
-            .box0 img{
-                width: 330px;
-                height: 400px;
-            }
-            .box0 h3{
-                font-size: 1rem;
-            }
-
-            .box1 {
-                flex-direction: column;
-            }
-
-            .box2 {
-                width: 350px;
-                margin: 20px 0;
-            }
-            .box2 img{
-                width: 300px;
-                height: 350px;
-            }
-            .box2 h3{
-                font-size: 1rem;
-            }
-            
-            .box5 {
-                flex-direction: column;
-            }
-
-            .box6 {
-                width: 350px;
-                height: 400px;
-                margin: 20px 0;
-            }
-            .box6 img{
-            width: 350px;
-            height: 400px;
-            }
-            .box6 h3{
-                font-size: 1rem;
-            }
-
-            .box7 {
-                flex-direction: column;
-            }
-           
-            .box8{
-                width: 350px;
-                margin: 20px 0;
-            }
-            .box8 h3{
-                font-size: 1rem;
-            }
-            .box8 p{
-                font-size: 0.8rem;
-            }
-            .box8 img{
-            width: 350px;
-            height: 400px;
-            }
-            .box9{
-                display: flex;
-                flex-direction: column;
-            }
-            .box10{
-                width: 350px;
-                height: 350px;
-                margin: 20px 0;
-            }
-            .box10 img{
-                width: 350px;
-                height: 350px;
-            }
-            .box11{
-                display: flex;
-                flex-direction: column;
-            }
-            .box12{
-                width: 330px;
-                height: 350px;
-                margin: 20px 0;
-            }
-            .box10 p{
-                font-size: 14px;
-            }
-             .box12 img{
-                width: 330px;
-                height: 350px;
-            }
-            .box13{
-                display: flex;
-                flex-direction: column;
-            }
-            .box14{
-                width: 330px;
-                height: 350px;
-                margin: 20px 0;
-            }
-            .box14 img{
-                width: 330px;
-                height: 350px;
-            }
-        
-
-        footer p{
+         .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #65350f;
+           /* backdrop-filter: blur(50px);*/
+            box-shadow: 0.5rem 1 rgba(0,0,0, .1);
+            transition: .3s ease;
+            overflow: hidden;
+         }
+        #check:checked~.navbar{
+            /*height: 17.7rem;*/
+            height: 100vh;
+        }
+         .navbar a{
+            display: block;
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
             text-align: center;
-            font-size: 0.9rem;
+            transform: translateY(-50px);
+            transition: .3 ease;
+            opacity: 0;
+         }
+          #check:checked~.navbar a{
+            transform: translateY(0);
+            transition-delay: calc(.15s * var(--i));
+            opacity: 1;
+          }
+          ul{
+            margin-top: 100px;
+          }
+          ul li{
+            width: 200px;
+          }
+          ul li a{
+            font-size: 10px;
+          }
+          ul li:hover a{
+              color: #fff;
+          }
+        main p{
+            font-size: 15px;
+            text-align: left;
+            padding: 10px;
+        }
+        .box{
+         margin-top: 100px;
+        }
+        .box0{
+        width: 330px;
+        height: 400px;
+        margin-right: 30px;
+        }
+       .box0 img{
+        width: 330px;
+        height: 400px;
+}
+        .box2{
+        width: 330px;
+        height: 400px;
+        margin-right: 35px;
+        }
+        .box2 img{
+        width: 330px;
+        height: 400px;
+        }
+        .box2 p{
+        font-size: 14px;
+        }
+        .box4{
+        width: 330px;
+        height:400px;
+        margin-right: 30px;
+        }
+        .box4 img{
+        width: 320px;
+        height:400px;
+        }
+        .box6{
+        width: 330px;
+        height: 400px;
+        margin-right: 30px;
+        }
+        .box6 p{
+         font-size: 14px;
+        }
+        .box6{
+        width: 330px;
+        height: 400px;
+        }
+        .box6 img{
+        width: 330px;
+        height: 380px;
+        }
+        .box8{
+        width: 330px;
+        height: 400px;
+        margin-right: 30px;
+        }
+        .box8 img{
+        width: 330px;
+        height: 400px;
         }
         }
+  
     </style>
 </head>
-
 <body>
     <header class="header">
         <a href="#" class="logo">🧔🏿‍♂️Kakooza</a>
         <input type="checkbox" name="" id="check">
         <label for="check" class="icons"><i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i></label>
+        <i class='bx bx-x' id="close-icon"></i></label>
         <nav class="navbar">
-            <a href="i.html">Home</a>
-            <a href="a.html">About</a>
-            <a href="s.html">Services</a>
-            <a href="c.html">Contact</a>
-          
+            <a href="index.html" style="--i:0;">Home</a>
+            <a href="a.html" style="--i:1;">About</a>
+            <a href="s.html" style="--i:2;">Services</a>
+            <a href="qk.html" style="--i:3;">Quiz</a>
+            <a href="c.html" style="--i:4;">Contact</a>
         </nav>
     </header>
     <main>
-        <h1>Greetings 👋🏿, I am Kakooza <i class='bx bx-code-alt'></i> a Software Developer in Uganda
-        </h1>
-        <p>I am passionate about finding ways to use Html CSS, JavaScript, C/C++, Python, Java, PHP,
-        Mysql and Microsoft Office to be more efficient in programming <i class="fa-solid fa-code"></i></p>
-        <span><a href="Kakooza's_manifesto_2024.pdf" download="manifesto">Download Manifesto</a></span>
-        <div class="box">
-            <div class="box0">
-                <h3>The New Member of Parliament SCI 2024</h3>
-                    <p>I thank The Almighty Jah for this opportunity given to me, i promise to best my very best to develop my school SCI and the campus at large. 
-                    I owe you</p> <p>Service delivery</p> <br> <p>Renovation</p> <br><p>Research</p> <br><p>Computing Infrastructure</p><br><p>Work shops</p>
-                <br><p>Outreach programs</p>
-            </div>
-            <div class="box0">
-                    <a href="kakooza copy.jpg"><img src="kakooza copy.jpg" alt="html"></a>
-            </div>
-        </div>
-        <h2>UPCOMING PROJECTS</h2>
-        <div class="box1">
-            <div class="box2">
-                <a href="bos.png"><img src="bos.png" alt=""></a>
-            </div>
-            <div class="box2">
-                <a href="coding1.gif"><img src="coding1.gif" alt=""></a>
-            </div>
-        </div>
-        <div class="box3">
-            <div class="box4">
-                        </div>
-            </div>
-            <div class="box4">
-           
-            </div>
-        </div>
-        <div class="box5">
-                <div class="box6">
-                        <h3>E-learning Platform</h3>
-                        <p>The University E-Learning Platform is a cutting-edge online education system designed to enhance the learning
-                            experience
-                            for students at our esteemed institution. This platform integrates advanced technologies to provide a flexible,
-                            interactive, and accessible virtual learning environment.<br> Key features include:<br>
-                            1. Course Delivery<br>
-                            2. Assessment and Feedback,<br>
-                            3. Personalized Learning Paths,<br>
-                            4. Technical Support,<br>
-                            5. Continuous Improvement and Innovation.
-                        </p>
-                </div>
-                <div class="box6">
-                    <img src="avento0.gif" alt="">
-                </div>
-        </div>
-        <div class="box7">
-                <div class="box8">
-                        <h3>INTERNET OF THINGS</h3>
-                        <P>The Internet of Things (IoT) is a revolutionary concept that refers to the interconnection of everyday physical
-                            devices
-                            to the internet, allowing them to collect and exchange data. These devices, ranging from household appliances and
-                            vehicles to industrial machinery and wearable gadgets, are embedded with sensors, software, and connectivity,
-                            enabling
-                            them to communicate and share information seamlessly.<br>
-                            Key elements of the Internet of Things include:<br>
-                            Connectivity:
-                            Sensors and Actuators,
-                            Data Processing and Analytics,
-                            Automation,
-                            Applications across Industries,
-                            Security and Privacy Concerns,
-                            Scalability,
-                            Economic and Social Impact.
-                        
-                        
-                        </P>
-                </div>
-                <div class="box8">
-                    <img src="10_coding_dribbble.gif" alt="">
-                </div>
-        </div>
-  
-      
-        <div class="box9">
-            <div class="box10">
-                <p>An element analyzer is a device or instrument used to determine the elemental composition of a sample. These
-                                analyzers
-                                are used in various fields including chemistry, material science, environmental science, geology, and archaeology,
-                                among
-                                others. There are different types of element analyzers, each utilizing specific principles and techniques to
-                                identify
-                                and quantify elements within a sample. Some common types of element analyzers include:<br>
-                                Atomic Absorption Spectrometer, Inductively Coupled Plasma Mass Spectrometer, X-ray Fluorescence Spectrometer,
-                                Energy Dispersive X-ray Spectrometer,
-                                Gas Chromatograph-Mass Spectrometer.</p>
-            </div>
-            <div class="box10">
-            <img src="atoms-mg.gif" alt="">
-            </div>
-        </div>
-        <div class="box13">
-            <div class="box14">
-                        <img src="magnet1.gif" alt="">
-            </div>
-            <div class="box14">
-                        <img src="telescope.gif" alt="">
-            </div>
-        </div>
-
-        <h3>FEATURING NKUMBA UNIVERSITY</h3>
-        <span><a href="https://nkumbauniversity.ac.ug/">JOIN US</a></span>
-        <div class="box11">
-                    <div class="box12">
-                <a href="images/Nkumba-University-Library-2-scaled.jpg"><img src="images/Nkumba-University-Library-2-scaled.jpg"
-                        alt=""></a>
-             
-                    </div>
-                    <div class="box12">
-                        <a href="Nkumba_University_Aerial_View.jpg"><img src="Nkumba_University_Aerial_View.jpg" alt=""></a>
-                     
-                    </div>
+      <p>Greetings 👋🏿, I am Kakooza <i class='bx bx-code-alt'></i> a Computer Scientist in Uganda.<br>
+    I am passionate about finding ways to use programming languages & electronics to be more efficient in embedded system</p>
+    
+         <ul>
+      <li style="--i:6"><a href="#">Unity</a></li>
+      <li style="--i:5"><a href="#">Infrastructure advancement</a></li>
+      <li style="--i:4"><a href="#">Research and innovation</a></li>
+      <li style="--i:3"><a href="#">Service delivery</a></li>
+      <li style="--i:2"><a href="#">Outreach programs</a></li>
+      <li style="--i:1"><a href="#">Hackathons</a></li>
+  </ul>
+  <div class="box">
+     <div class="box0" data-aos="zoom-out" data-aos-duration="1000">
+        <a href="kakooza copy.jpg"><img src="kakooza copy.jpg" alt="html"></a>
+     </div>
+        <h3>KEMET AI</h3>
+      <div class="box0"><img src="robot-ang.gif" alt="ai">
+      </div>
+  </div>
+  <h2>UPCOMING PROJECTS</h2>
+   <div class="box1">
+     <div class="box2">
+            <h3>E-learning Platform</h3>
+            <p>The University E-Learning Platform is a cutting-edge online education system designed to enhance the learning
+                experience
+                for students at our esteemed institution. This platform integrates advanced technologies to provide a flexible,
+                interactive, and accessible virtual learning environment.<br> Key features include:<br>
+                1. Course Delivery<br>
+                2. Assessment and Feedback,<br>
+                3. Personalized Learning Paths,<br>
+                4. Technical Support,<br>
+                5. Continuous Improvement and Innovation.
+            </p>
+     </div>
+      <div class="box2">
+                <img src="avento0.gif" alt="">
+      </div>
+   </div>
+    <div class="box3">
+         <div class="box4">
+                 <img src="bos.png" alt="ape"></div>
+         <div class="box4">
+           <img src="website.gif" alt=""></div>
+    </div>
+<div class="box5">
+    <div class="box6">
+            <h3>INTERNET OF THINGS</h3>
+            <p>The Internet of Things (IoT) is a revolutionary concept that refers to the interconnection of everyday physical
+                devices
+                to the internet, allowing them to collect and exchange data. These devices, ranging from household appliances and
+                vehicles to industrial machinery and wearable gadgets, are embedded with sensors, software, and connectivity,
+                enabling
+                them to communicate and share information seamlessly.<br>
+                Key elements of the Internet of Things include:<br>
+                Connectivity:
+                Sensors and Actuators,
+                Data Processing and Analytics,
+                Automation,
+                Applications across Industries,
+                Security and Privacy Concerns,
+                Scalability,
+                Economic and Social Impact.
+    </p>
+    </div>
+    <div class="box6">
+        <img src="coding1.gif" alt="">
+    </div>
+</div>
+ 
+<div class="box7">
+    <div class="box8">
+        <img src="Arduino GSM Control Circuit Diagram.jpg" alt=""> </div>
+    <h3>FEATURING NKUMBA UNIVERSITY</h3>
+    <div class="box8"><img src="Nkumba_University_Aerial_View.jpg" alt=""></div>
+</div>
     </main>
-    <footer>
-        <ul>
-            <li><a href="https://www.youtube.com/@kakoozaxenyondo00"><i class="fa-brands fa-square-youtube"></i></a></li>
-            <li><a href="https://www.github.com/kakooza00"><i class="fa-brands fa-square-github"></i></a></li>
-            <li><a href="https://www.telegram.com/@Kakooza00"><i class="fa-brands fa-telegram"></i></a></a></li>
-            <li><a href="https://www.linkedin.com/@kakoozaxenyondo"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-        <p>💻Kakooza Xenyondo William</p><br>
-        <p><i class="fa-solid fa-location-dot"></i> Kemeti Uganda</p><br>
-        <p>&copy; 2024 All Rights Reserved</p>
-    </footer>
-</body>
 
+    <footer>
+        <p> Kakooza Xenyondo 💻</p>
+        <p> Kemet Uganda</p>
+        <p>&copy; 2024 All Rights Reserved</p>
+        <div class="ico">
+            <a href="https://www.linkedin.com/in/kakooza-xenyondo-a881b529a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@kakoozaxenyondo00"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/+256781673292"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/Kakooza00"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
 </html>
