@@ -210,6 +210,9 @@ cursor: pointer;
                 else if (message.includes('what is the largest continent') || message.includes('largest continent') || message.includes('africa')) {
                     speak("africa is the largest and richest continent on earth");
                 }
+                else if (message.includes('goodbye') || message.includes('see you soon') || message.includes('take care')) {
+                    speak("take care too ");
+                }
                 
                 else if (message.includes("open google")) {
                     window.open("https://google.com", "_blank");
