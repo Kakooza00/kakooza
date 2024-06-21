@@ -192,7 +192,7 @@ cursor: pointer;
                 if (message.includes('hey') || message.includes('hello')) {
                     speak("Hello, How May I Help You?");
                 }
-                else if (message.includes('how are you') || message.includes('hello')) {
+                else if (message.includes('how are you') || message.includes('hi') || message.includes('hi there')) {
                     speak("Hello, How are you doing?");
                 }
                 else if (message.includes('what is your name') || message.includes('who are you')) {
@@ -213,6 +213,9 @@ cursor: pointer;
                 else if (message.includes('goodbye') || message.includes('see you soon') || message.includes('take care')) {
                     speak("take care too ");
                 }
+              else if (message.includes('what should i eat today') || message.includes('what can i eat today')) {
+                    speak("breakfast take bread and tea, lunch take posho, rice, cow peas, ova cado and drink water in conclusion supper take juice or water only.  ");
+                }
                 
                 else if (message.includes("open google")) {
                     window.open("https://google.com", "_blank");
@@ -231,7 +234,6 @@ cursor: pointer;
                     window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
                     const finalText = "This is what i found on internet regarding " + message;
                     speak(finalText);
-
                 }
 
                 else if (message.includes('wikipedia')) {
